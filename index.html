@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Font Awesome library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+      rel="stylesheet"
+    />
+    <!-- My framework -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Main css stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-container d-grid">
+      <!-- Start sidebar -->
+      <aside class="sidebar pos-relative box-sh p-10 bg-white">
+        <h3 class="logo pos-relative mb-20 fs-13 txt-c">Bassel</h3>
+        <nav>
+          <ul class="nav d-flex-col gap-10 txt-c-mobile">
+            <li>
+              <a href="index.html" class="active d-block rad-6 p-10">
+                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span class="d-none-mobile">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="settings.html" class="d-block rad-6 p-10">
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span class="d-none-mobile">Settings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-block rad-6 p-10">
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span class="d-none-mobile">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-block rad-6 p-10">
+                <i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span class="d-none-mobile">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-block rad-6 p-10">
+                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span class="d-none-mobile">Courses</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-block rad-6 p-10">
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span class="d-none-mobile">Friends</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-block rad-6 p-10">
+                <i class="fa-regular fa-file fa-fw"></i>
+                <span class="d-none-mobile">Files</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-block p-10">
+                <i class="fa-regular fa-credit-card fa-fw"></i>
+                <span class="d-none-mobile">Plans</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- End sidebar -->
+      <!-- Start header -->
+      <header class="header d-flex-bet-c over-hid p-16 bg-white">
+        <div class="search pos-relative">
+          <input
+            class="rad-6 p-10 tr-450"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Type a keyword"
+          />
+        </div>
+        <div class="icons d-flex-bet-c gap-10">
+          <span class="notify pos-relative">
+            <i class="fa-regular fa-bell fa-fw pointer fs-20"></i>
+          </span>
+          <span>
+            <i class="fa-regular fa-user fa-fw pointer fs-20"></i>
+          </span>
+        </div>
+      </header>
+      <!-- End header -->
+      <!-- Start main -->
+      <main class="main p-20 p-10-mob over-hid">
+        <h1 class="pos-relative mb-10 w-fit">Dashboard</h1>
+        <section class="widgets d-grid gap-20">
+          <div class="widget over-hid bg-white rad-6">
+            <div class="welcome d-flex-between p-20 bg-eee">
+              <div class="text">
+                <h2>Welcome</h2>
+                <p class="grey-c">Bassel</p>
+              </div>
+              <img
+                class="d-none-mobile"
+                src="images/welcome.png"
+                alt="welcome image"
+              />
+            </div>
+            <img
+              class="avatar ml-20 box-sh rad-half"
+              src="images/avatar.png"
+              alt="avatar"
+            />
+            <div
+              class="stats d-flex-c d-block-mob txt-c-mobile p-20 mt-10 mb-10"
+            >
+              <div class="d-flex-col-c flex-1">
+                <span>Bassel Mostafa</span>
+                <span class="grey-c">Developer</span>
+              </div>
+              <div class="d-flex-col-c flex-1">
+                <span>15</span>
+                <span class="grey-c">Projects</span>
+              </div>
+            </div>
+            <a class="btn-shape mr-1em25 tr-450" href="profile.html">Profile</a>
+          </div>
+          <div class="widget p-20 over-hid bg-white rad-6">
+            <div class="text">
+              <h2>Quick Draft</h2>
+              <p class="fs-14-m grey-c">Write a draft for your ideas</p>
+            </div>
+            <form>
+              <input
+                class="w-full bg-eee mt-10 mb-10 no-border p-10"
+                type="text"
+                name="title"
+                id="title"
+                placeholder="Title"
+              />
+              <textarea
+                class="w-full bg-eee mt-10 mb-10 no-border p-10"
+                name="thoughts"
+                id="thoughts"
+                placeholder="Your thoughts"
+              ></textarea>
+              <input class="btn-shape tr-450" type="submit" value="Save" />
+            </form>
+          </div>
+          <div class="widget p-20 over-hid bg-white rad-6 pos-relative">
+            <h2 class="mb-20">Last Project Progress</h2>
+            <ul class="pos-relative progress">
+              <li class="mb-20 d-flex fs-14-m done">Got The Project</li>
+              <li class="mb-20 d-flex fs-14-m done">Started The Project</li>
+              <li class="mb-20 d-flex fs-14-m done">
+                The Project About To Finish
+              </li>
+              <li class="mb-20 d-flex fs-14-m current">Test The Project</li>
+              <li class="d-flex fs-14-m">Finish The Project & Get Money</li>
+            </ul>
+            <img class="rocket" src="images/project.png" alt="rocket icon" />
+          </div>
+        </section>
+        <section class="projects mt-20 mb-20 p-20 over-hid bg-white rad-6">
+          <h2 class="mb-10">Projects</h2>
+          <div class="responsive-table">
+            <table class="fs-15 w-full">
+              <thead class="bg-eee">
+                <tr>
+                  <th>Name</th>
+                  <th>Finish Date</th>
+                  <th>Client</th>
+                  <th>Price</th>
+                  <th>Team</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Ministry Wikipedia</td>
+                  <td>10 May 2022</td>
+                  <td>Ministry</td>
+                  <td>$5300</td>
+                  <td>
+                    <img decoding="async" src="images/team-01.png" alt="" />
+                    <img decoding="async" src="images/team-02.png" alt="" />
+                    <img decoding="async" src="images/team-03.png" alt="" />
+                    <img decoding="async" src="images/team-04.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="label btn-shape bg-orange c-white"
+                      >Pending</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Elzero Shop</td>
+                  <td>12 Oct 2021</td>
+                  <td>Elzero Company</td>
+                  <td>$1500</td>
+                  <td>
+                    <img decoding="async" src="images/team-01.png" alt="" />
+                    <img decoding="async" src="images/team-02.png" alt="" />
+                    <img decoding="async" src="images/team-04.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="label btn-shape bg-blue c-white"
+                      >In Progress</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Bouba App</td>
+                  <td>05 Sep 2021</td>
+                  <td>Bouba</td>
+                  <td>$800</td>
+                  <td>
+                    <img decoding="async" src="images/team-02.png" alt="" />
+                    <img decoding="async" src="images/team-03.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="label btn-shape bg-green c-white"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Mahmoud Website</td>
+                  <td>22 May 2021</td>
+                  <td>Mahmoud</td>
+                  <td>$600</td>
+                  <td>
+                    <img decoding="async" src="images/team-01.png" alt="" />
+                    <img decoding="async" src="images/team-02.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="label btn-shape bg-green c-white"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sayed Website</td>
+                  <td>24 May 2021</td>
+                  <td>Sayed</td>
+                  <td>$300</td>
+                  <td>
+                    <img decoding="async" src="images/team-01.png" alt="" />
+                    <img decoding="async" src="images/team-03.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="label btn-shape bg-red c-white">Rejected</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Arena Application</td>
+                  <td>01 Mar 2021</td>
+                  <td>Arena Company</td>
+                  <td>$2600</td>
+                  <td>
+                    <img decoding="async" src="images/team-01.png" alt="" />
+                    <img decoding="async" src="images/team-02.png" alt="" />
+                    <img decoding="async" src="images/team-03.png" alt="" />
+                    <img decoding="async" src="images/team-04.png" alt="" />
+                  </td>
+                  <td>
+                    <span class="label btn-shape bg-green c-white"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+      <!-- End main -->
+    </div>
+  </body>
+</html>
